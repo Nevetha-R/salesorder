@@ -36,7 +36,7 @@ namespace salesorder
                 }
                 else
                 {
-                 Lblerror.Text= "pass incorrect";
+                 Lblerror.Text= "password incorrect";
                 }
             }
             else

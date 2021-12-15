@@ -55,7 +55,7 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td style="font-size: medium">
-                        <asp:Label ID="Lblerror" runat="server"></asp:Label>
+                        <asp:Label ID="Lblerror" runat="server" ForeColor="Red"></asp:Label>
                     </td>
                     <td>&nbsp;</td>
                 </tr>

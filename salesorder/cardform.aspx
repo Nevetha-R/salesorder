@@ -39,34 +39,31 @@
                     <td class="auto-style4">Card Number:</td>
                     <td>
                         <asp:TextBox ID="Txtcardno" runat="server"></asp:TextBox>
-                        <br />
+                        &nbsp;
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Txtcardno" ErrorMessage="Please enter card number" ForeColor="Red"></asp:RequiredFieldValidator>
                         <br />
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Txtcardno" ErrorMessage="Please enter card number" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style4">Card Holder Name:</td>
                     <td>
                         <asp:TextBox ID="Txtname" runat="server"></asp:TextBox>
-                        <br />
-                        <br />
+                        &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="Txtname" ErrorMessage="Please enter card holder name" ForeColor="Red"></asp:RequiredFieldValidator>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="Txtname" ErrorMessage="Please enter card holder name" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style4">cvv:</td>
                     <td>
                         <asp:TextBox ID="Txtcvv" runat="server" MaxLength="3"></asp:TextBox>
-                        <br />
+                        &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="Txtcvv" ErrorMessage="Please enter cvv" ForeColor="Red"></asp:RequiredFieldValidator>
                         <br />
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="Txtcvv" ErrorMessage="Please enter cvv" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style4">Expire date:</td>
@@ -103,9 +100,7 @@
                     <td class="auto-style4">Total Amount:</td>
                     <td>
                         <asp:TextBox ID="Txttotamt" runat="server" ReadOnly="True"></asp:TextBox>
-                        <br />
-                        <br />
-                        <br />
+                        &nbsp;&nbsp;&nbsp;
                         <asp:Button ID="Btnpay" runat="server" OnClick="Btnpay_Click" Text="Pay Now" BorderColor="#000099" BorderWidth="3px" />
                     </td>
                     <td>
